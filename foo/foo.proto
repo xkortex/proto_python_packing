@@ -8,5 +8,5 @@ import "bar/qux/qux.proto";
 
 message Foo {
   foo.bar.BarMsg bar = 1;
-//  foo.bar.qux.QuxMsg q = 2;
+  foo.bar.qux.QuxMsg q = 2;
 }
