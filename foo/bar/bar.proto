@@ -3,7 +3,7 @@ syntax = "proto3";
 // matches directory foo/bar
 package foo.bar;
 
-import "foo/bar/qux/qux.proto";
+import "bar/qux/qux.proto";
 
 message BarMsg {
   string b = 1;
