@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+// matches directory foo
+package foo.bar;
+
+import "bar/qux/qux.proto";
