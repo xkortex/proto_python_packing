@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package proto.pypkg.goods;
+package pypkg.subpkg.goods;
 
 message MyAwesomeMsg {
     string leet = 1;
