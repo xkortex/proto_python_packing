@@ -4,7 +4,7 @@ syntax = "proto3";
 package foo;
 
 import "bar/bar.proto";
-//import "foo/bar/qux/qux.proto";
+import "bar/qux/qux.proto";
 
 message Foo {
   foo.bar.BarMsg bar = 1;
