@@ -2,6 +2,12 @@
 #	protoc -I./foo --python_out=./pypkg ./foo/*.proto
 #	protoc -I./foo -I./foo/bar --python_out=./pypkg \
 
+mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
+current_dir := $(notdir $(patsubst %/,%,$(dir $(mkfile_path))))
+
+$(info "mkfile path: [$(mkfile_path)]")
+$(info "current dir: [$(current_dir)]")
+
 .PHONY: build
 build:
 	protoc -I./foo --python_out=./pypkg \
@@ -24,9 +30,9 @@ build:
 
 .PHONY: build2
 build2:
-	protoc -I=pypkg=./proto --python_out=./pypkg \
-	./proto/pypkg/*.proto \
-	./proto/pypkg/goods/*.proto
+	protoc -I=pypkg=proto --python_out=./pypkg \
+	./proto/subpkg/*.proto \
+	./proto/subpkg/goods/*.proto
 
 .PHONY: clean
 clean:
