@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+// matches directory foo
+package foo;
+
+import "bar/bar.proto";
+
+message Foo {
+  foo.bar.Bar bar = 1;
+}

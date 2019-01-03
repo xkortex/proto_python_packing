@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+// matches directory foo/bar/qux
+package foo.bar.qux;
+
+message Qux {
+  string q = 1;
+}
