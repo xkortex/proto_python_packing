@@ -2,3 +2,10 @@ syntax = "proto3";
 
 // matches directory
 package proto.pypkg;
+
+import "goods/awesome.proto";
+
+message RealCoolMsg {
+    int64 number = 1;
+//    proto.pypkg.goods msg = 1
+}

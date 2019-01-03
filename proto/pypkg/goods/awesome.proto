@@ -1,3 +1,7 @@
 syntax = "proto3";
 
 package proto.pypkg.goods;
+
+message MyAwesomeMsg {
+    string leet = 1;
+}
