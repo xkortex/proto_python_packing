@@ -4,7 +4,7 @@
 
 .PHONY: build
 build:
-	protoc -I./foo --python_out=./pypkg \
+	protoc -I. --python_out=./pypkg \
 	./foo/*.proto \
 	./foo/bar/*.proto \
 	./foo/bar/qux/*.proto

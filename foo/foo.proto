@@ -3,8 +3,8 @@ syntax = "proto3";
 // matches directory foo
 package foo;
 
-import "bar/bar.proto";
-import "bar/qux/qux.proto";
+import "foo/bar/bar.proto";
+import "foo/bar/qux/qux.proto";
 
 message Foo {
   foo.bar.BarMsg bar = 1;
