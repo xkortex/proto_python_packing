@@ -3,6 +3,6 @@ syntax = "proto3";
 // matches directory foo/bar/qux
 package foo.bar.qux;
 
-message Qux {
+message QuxMsg {
   string q = 1;
 }

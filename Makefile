@@ -2,7 +2,10 @@ default: build
 
 build:
 #	protoc -I./foo --python_out=./pypkg ./foo/*.proto
-	protoc -I./foo -I./foo/bar --python_out=./pypkg ./foo/*.proto ./foo/bar/*.proto
+	protoc -I./foo -I./foo/bar --python_out=./pypkg \
+	./foo/*.proto \
+	./foo/bar/*.proto \
+	./foo/bar/qux/*.proto
 
 clean:
 	rm -f --verbose ./*_pb2*
